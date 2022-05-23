@@ -1,0 +1,16 @@
+#container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0px;
+  border: 2px;
+  border-style: solid;
+  border-color: black;
+  padding: 0px;
+
+}
+
+.gridDiv {
+  border: 1px;
+  border-style: solid;
+  border-color: blue;
+}

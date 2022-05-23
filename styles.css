@@ -1,12 +1,36 @@
+body {
+  text-align: center;
+}
+
+h1 {
+  font-size: 48px;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 #container {
   display: flex;
   flex-wrap: wrap;
   gap: 0px;
   border: 2px;
   border-style: solid;
-  border-color: black;
+  border-color: #000000;
   padding: 0px;
+  margin: 24px 64px 24px 64px;
+  flex-shrink: 0;
+}
 
+.colorButtons {
+  margin-top: 24px;
 }
 
 .gridDiv {

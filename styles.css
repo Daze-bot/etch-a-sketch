@@ -9,12 +9,7 @@ h1 {
 .content {
   display: flex;
   justify-content: center;
-}
-
-.options {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  align-items: flex-start;
 }
 
 #container {
@@ -29,8 +24,21 @@ h1 {
   flex-shrink: 0;
 }
 
-.colorButtons {
+p {
+  font-size: 24px;
+}
+
+.customGrid {
   margin-top: 24px;
+  font-size: 24px;
+}
+
+.colorButtons > button {
+  font-size: 16px;
+}
+
+.colorButtons {
+  margin-top: 128px;
 }
 
 .gridDiv {

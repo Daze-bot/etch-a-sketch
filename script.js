@@ -3,6 +3,7 @@ let containerSideLength = 600;
 container.style.height = `${containerSideLength}px`;
 container.style.width = `${containerSideLength}px`;
 let customGridBtn = document.querySelector('.customGrid');
+let resetBtn = document.querySelector('.resetBtn');
 
 customGridBtn.addEventListener('click', () => {
   let userInput = +prompt("Select the number of squares per side", "16");

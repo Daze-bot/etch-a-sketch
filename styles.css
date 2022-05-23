@@ -1,5 +1,6 @@
 body {
   text-align: center;
+  background-color: #85c1f5;
 }
 
 h1 {
@@ -9,7 +10,19 @@ h1 {
 .content {
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 24px 64px 24px 64px;
+  background-color: #acacac;
+  padding: 8px;
+  border: 2px;
+  border-style: solid;
+  border-color: #000000;
 }
 
 #container {
@@ -22,14 +35,15 @@ h1 {
   padding: 0px;
   margin: 24px 64px 24px 64px;
   flex-shrink: 0;
+  background-color: white;
 }
 
-p {
+.colorOptions {
   font-size: 24px;
+  margin-bottom: 8px;
 }
 
 .customGrid {
-  margin-top: 24px;
   font-size: 24px;
 }
 
@@ -37,12 +51,27 @@ p {
   font-size: 16px;
 }
 
-.colorButtons {
-  margin-top: 128px;
+.currentChoice {
+  margin-top: 24px;
+  margin-bottom: 12px;
+  font-size: 20px;
+}
+
+.selection {
+  background-color: white;
+  font-size: 20px;
+}
+
+.resetBtn {
+  font-size: 24px;
 }
 
 .gridDiv {
   border: 1px;
   border-style: solid;
   border-color: #9e9ea563;
+}
+
+p {
+  margin: 0;
 }

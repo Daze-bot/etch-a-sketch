@@ -61,9 +61,17 @@ h1 {
   font-size: 20px;
 }
 
+.selection {
+  color: white;
+  background: black;
+}
+
+.currentGrid {
+  background: white;
+}
+
 .selection,
 .currentGrid {
-  background-color: white;
   font-size: 20px;
 }
 

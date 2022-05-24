@@ -18,16 +18,24 @@ clearBtn.addEventListener('click', clearGrid);
 
 blackBtn.addEventListener('click', () => {
   currentColor.textContent = "Black";
+  currentColor.style.color = "white";
+  currentColor.style.background = "black";
 });
 rainbowBtn.addEventListener('click', () => {
   currentColor.textContent = "Rainbow";
+  currentColor.style.color = "#5dfa65";
+  currentColor.style.background = "#763491";
 });
 grayscaleBtn.addEventListener('click', () => {
   currentColor.textContent = "Grayscale";
+  currentColor.style.color = "white";
+  currentColor.style.background = "gray";
 });
 eraser.addEventListener('click', () => {
   currentColor.textContent = "Eraser";
-})
+  currentColor.style.color = "black";
+  currentColor.style.background = "#fab5fa";
+});
 
 function newGame() {
   let userInput = +prompt("Select the number of squares per side", "16");
@@ -78,6 +86,8 @@ function resetGame() {
   createGrid(16);
   currentDimensions.textContent = "16x16";
   currentColor.textContent = "Black";
+  currentColor.style.color = "white";
+  currentColor.style.background = "black";
 }
 
 // Default Size

@@ -57,7 +57,8 @@ h1 {
   font-size: 20px;
 }
 
-.selection {
+.selection,
+.currentGrid {
   background-color: white;
   font-size: 20px;
 }

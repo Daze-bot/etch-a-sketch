@@ -51,6 +51,10 @@ h1 {
   font-size: 16px;
 }
 
+.eraser {
+  font-size: 24px;
+}
+
 .currentChoice {
   margin-top: 24px;
   margin-bottom: 12px;

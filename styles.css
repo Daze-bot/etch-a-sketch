@@ -94,3 +94,11 @@ h1 {
 p {
   margin: 0;
 }
+
+.hidden {
+  display: none;
+}
+
+.textShadow {
+  text-shadow: -1px 0 #80808073, 0 1px #80808073, 1px 0 #80808073, 0 -1px #80808073;
+}

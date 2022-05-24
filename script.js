@@ -9,29 +9,48 @@ let currentColor = document.querySelector('.selection');
 let blackBtn = document.querySelector('.blackBtn');
 let rainbowBtn = document.querySelector('.rainbowBtn');
 let grayscaleBtn = document.querySelector('.grayscaleBtn');
+let pickColorBtn = document.querySelector('.pickColorBtn');
 let eraser = document.querySelector('.eraser');
 let clearBtn = document.querySelector('.clear');
+let colorWheel = document.querySelector('#colorWheel');
+let colorSelection = document.querySelector('.selection');
+let customColor;
 
 customGridBtn.addEventListener('click', newGame);
 resetBtn.addEventListener('click', resetGame);
 clearBtn.addEventListener('click', clearGrid);
 
+pickColorBtn.addEventListener('click', () => {
+  colorWheel.click();
+  colorWheel.oninput = (e) => {
+    currentColor.textContent = "Custom"
+    customColor = e.target.value;
+    currentColor.style.color = "black";
+    currentColor.style.background = customColor;
+    colorSelection.classList.add('textShadow');
+  };
+});
+
 blackBtn.addEventListener('click', () => {
+  colorSelection.classList.remove('textShadow');
   currentColor.textContent = "Black";
   currentColor.style.color = "white";
   currentColor.style.background = "black";
 });
 rainbowBtn.addEventListener('click', () => {
+  colorSelection.classList.remove('textShadow');
   currentColor.textContent = "Rainbow";
   currentColor.style.color = "#5dfa65";
   currentColor.style.background = "#763491";
 });
 grayscaleBtn.addEventListener('click', () => {
+  colorSelection.classList.remove('textShadow');
   currentColor.textContent = "Grayscale";
   currentColor.style.color = "white";
   currentColor.style.background = "gray";
 });
 eraser.addEventListener('click', () => {
+  colorSelection.classList.remove('textShadow');
   currentColor.textContent = "Eraser";
   currentColor.style.color = "black";
   currentColor.style.background = "#fab5fa";
@@ -74,6 +93,8 @@ function addColor() {
     this.style.background = "gray";
   } else if (currentColor.textContent === "Eraser") {
     this.style.background = "white";
+  } else if (currentColor.textContent === "Custom") {
+    this.style.background = customColor;
   }
 }
 

@@ -91,6 +91,7 @@ function addColor() {
     this.style.background = "#" + Math.floor(Math.random()*16777215).toString(16);
   } else if (currentColor.textContent === "Grayscale") {
     this.style.background = "gray";
+    this.style.background.opacity += "0.1";
   } else if (currentColor.textContent === "Eraser") {
     this.style.background = "white";
   } else if (currentColor.textContent === "Custom") {

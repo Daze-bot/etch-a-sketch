@@ -67,7 +67,13 @@ h1 {
   font-size: 20px;
 }
 
-.resetBtn {
+.endButtons {
+  display: flex;
+  gap: 12px;
+}
+
+.resetBtn,
+.clear {
   font-size: 24px;
 }
 

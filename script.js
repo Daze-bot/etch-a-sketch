@@ -10,9 +10,11 @@ let blackBtn = document.querySelector('.blackBtn');
 let rainbowBtn = document.querySelector('.rainbowBtn');
 let grayscaleBtn = document.querySelector('.grayscaleBtn');
 let eraser = document.querySelector('.eraser');
+let clearBtn = document.querySelector('.clear');
 
 customGridBtn.addEventListener('click', newGame);
 resetBtn.addEventListener('click', resetGame);
+clearBtn.addEventListener('click', clearGrid);
 
 blackBtn.addEventListener('click', () => {
   currentColor.textContent = "Black";
@@ -65,6 +67,11 @@ function addColor() {
   } else if (currentColor.textContent === "Eraser") {
     this.style.background = "white";
   }
+}
+
+function clearGrid() {
+  let gridSquares = container.querySelectorAll('div');
+  gridSquares.forEach (gridSquare => gridSquare.style.background = "white")
 }
 
 function resetGame() {

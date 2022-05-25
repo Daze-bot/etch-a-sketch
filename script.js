@@ -13,7 +13,6 @@ let pickColorBtn = document.querySelector('.pickColorBtn');
 let eraser = document.querySelector('.eraser');
 let clearBtn = document.querySelector('.clear');
 let colorWheel = document.querySelector('#colorWheel');
-let colorSelection = document.querySelector('.selection');
 let customColor;
 
 customGridBtn.addEventListener('click', newGame);
@@ -27,30 +26,30 @@ pickColorBtn.addEventListener('click', () => {
     customColor = e.target.value;
     currentColor.style.color = "black";
     currentColor.style.background = customColor;
-    colorSelection.classList.add('textShadow');
+    currentColor.classList.add('textShadow');
   };
 });
 
 blackBtn.addEventListener('click', () => {
-  colorSelection.classList.remove('textShadow');
+  currentColor.classList.remove('textShadow');
   currentColor.textContent = "Black";
   currentColor.style.color = "white";
   currentColor.style.background = "black";
 });
 rainbowBtn.addEventListener('click', () => {
-  colorSelection.classList.remove('textShadow');
+  currentColor.classList.remove('textShadow');
   currentColor.textContent = "Rainbow";
   currentColor.style.color = "#5dfa65";
   currentColor.style.background = "#763491";
 });
 grayscaleBtn.addEventListener('click', () => {
-  colorSelection.classList.remove('textShadow');
+  currentColor.classList.remove('textShadow');
   currentColor.textContent = "Grayscale";
   currentColor.style.color = "white";
   currentColor.style.background = "gray";
 });
 eraser.addEventListener('click', () => {
-  colorSelection.classList.remove('textShadow');
+  currentColor.classList.remove('textShadow');
   currentColor.textContent = "Eraser";
   currentColor.style.color = "black";
   currentColor.style.background = "#fab5fa";

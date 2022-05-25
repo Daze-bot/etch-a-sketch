@@ -90,8 +90,29 @@ function addColor() {
   } else if (currentColor.textContent === "Rainbow") {
     this.style.background = "#" + Math.floor(Math.random()*16777215).toString(16);
   } else if (currentColor.textContent === "Grayscale") {
-    this.style.background = "gray";
-    this.style.background.opacity += "0.1";
+    if (this.style.background === "rgba(128, 128, 128, 0.1)") {
+      this.style.background = "rgba(128, 128, 128, 0.2)";
+    } else if (this.style.background === "rgba(128, 128, 128, 0.2)") {
+      this.style.background = "rgba(128, 128, 128, 0.3)";
+    } else if (this.style.background === "rgba(128, 128, 128, 0.3)") {
+      this.style.background = "rgba(128, 128, 128, 0.4)";
+    } else if (this.style.background === "rgba(128, 128, 128, 0.4)") {
+      this.style.background = "rgba(128, 128, 128, 0.5)";
+    } else if (this.style.background === "rgba(128, 128, 128, 0.5)") {
+      this.style.background = "rgba(128, 128, 128, 0.6)";
+    } else if (this.style.background === "rgba(128, 128, 128, 0.6)") {
+      this.style.background = "rgba(128, 128, 128, 0.7)";
+    } else if (this.style.background === "rgba(128, 128, 128, 0.7)") {
+      this.style.background = "rgba(128, 128, 128, 0.8)";
+    } else if (this.style.background === "rgba(128, 128, 128, 0.8)") {
+      this.style.background = "rgba(128, 128, 128, 0.9)";
+    } else if (this.style.background === "rgba(128, 128, 128, 0.9)") {
+      this.style.background = "gray";
+    } else if (this.style.background === "gray") {
+      this.style.background = "gray";
+    } else {
+      this.style.background = "rgba(128, 128, 128, 0.1)";
+    }
   } else if (currentColor.textContent === "Eraser") {
     this.style.background = "white";
   } else if (currentColor.textContent === "Custom") {

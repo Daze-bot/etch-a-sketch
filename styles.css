@@ -39,11 +39,14 @@ h1 {
 }
 
 .colorOptions {
-  font-size: 24px;
   margin-bottom: 8px;
 }
 
-.customGrid {
+.customGrid,
+.eraser,
+.resetBtn,
+.clear,
+.colorOptions {
   font-size: 24px;
 }
 
@@ -51,14 +54,9 @@ h1 {
   font-size: 16px;
 }
 
-.eraser {
-  font-size: 24px;
-}
-
 .currentChoice {
   margin-top: 24px;
   margin-bottom: 12px;
-  font-size: 20px;
 }
 
 .selection {
@@ -71,18 +69,14 @@ h1 {
 }
 
 .selection,
-.currentGrid {
+.currentGrid,
+.currentChoice {
   font-size: 20px;
 }
 
 .endButtons {
   display: flex;
   gap: 12px;
-}
-
-.resetBtn,
-.clear {
-  font-size: 24px;
 }
 
 .gridDiv {
